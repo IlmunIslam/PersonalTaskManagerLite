@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.alvi.MainController"
+      spacing="10">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+    <Label text="Personal Task Manager" style="-fx-font-size: 25px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="taskTitleField" promptText="Enter task title" />
+        <DatePicker fx:id="dueDatePicker" />
+        <Button text="Add Task" onAction="#onAddTask"/>
+    </HBox>
+
+    <ListView fx:id="taskListView" prefHeight="200"/>
+
+    <HBox spacing="10">
+        <Button text="Mark as Complete" onAction="#onMarkComplete"/>
+        <Button text="Delete Task" onAction="#onDeleteTask"/>
+        <Button text="Show Completed" onAction="#onShowCompleted"/>
+        <Button text="Show All" onAction="#onShowAll"/>
+    </HBox>
+
+</VBox>

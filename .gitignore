@@ -1,0 +1,30 @@
+# --- Build output ---
+target/
+*.class
+
+# --- Maven wrapper (empty/unused in this project) ---
+.mvn/
+
+# --- IDE: IntelliJ IDEA ---
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# --- IDE: Eclipse ---
+.classpath
+.project
+.settings/
+.apt_generated/
+.factorypath
+
+# --- IDE: VS Code ---
+.vscode/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- App runtime data (saved task lists) ---
+alvi.txt
+tasks.txt
