@@ -19,14 +19,14 @@ to disk between runs.
 
 ## Tech stack
 
-- **Java 21**
+- **Java 17**
 - **JavaFX 21.0.3** (`javafx-controls`, `javafx-fxml`) — UI defined in FXML
   (`main_view.fxml`) with a CSS stylesheet (`style.css`)
 - **Maven** — build and dependency management (`javafx-maven-plugin`)
 
 ## Prerequisites
 
-- JDK 21 or newer
+- JDK 17 or newer
 - Maven 3.6+ (no Maven wrapper is bundled; use a system `mvn`)
 
 ## Build and run
